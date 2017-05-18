@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/mui.css"/>
+		<style type="text/css">
+			.mui-input-row label{
+				border-right: 1px solid #d8d8d8;
+			}
+			.mui-input-row label ~ input{
+				padding-left: 10px;
+			}
+			/*.mui-input-group .mui-input-row{}*/
+			.mui-input-group .mui-input-row{
+				padding: 10px 0;
+				height: 60px;
+			}
+			#getNum{
+				position: absolute;
+				top: 11px;
+				right: 0;
+				width: 100px;
+			}
+			.mui-btn-block{
+				width: 90%;
+				margin:10px auto;
+				/*margin-top: 10px;*/
+			}
+		</style>
+	</head>
+	<body>
+		<form class="mui-input-group">
+		    <div class="mui-input-row">
+		        <label>地址</label>
+		        <input type="text" class="mui-input-clear" placeholder="input">
+		    </div>
+		    <div class="mui-input-row">
+		        <label>手机</label>
+		        <input type="text" class="mui-input-clear" placeholder="input">
+		    </div>
+		    <div class="mui-input-row">
+		        <label>验证</label>
+		        <input type="text" class="mui-input-clear" placeholder="input">
+		        <button id="getNum" type="button" class="mui-btn mui-btn-danger mui-btn-outlined">获取验证码</button>
+		    </div>
+		    <div class="mui-input-row">
+		        <label>密码</label>
+		        <input type="text" class="mui-input-clear" placeholder="input">
+		    </div>
+		    <div class="mui-input-row">
+		        <label>邀请</label>
+		        <input type="text" class="mui-input-clear" placeholder="input">
+		    </div>
+		</form>
+		<button type="button" class="mui-btn mui-btn-red mui-btn-block">按钮</button>
+		
+	</body>
+</html>

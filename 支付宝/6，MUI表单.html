@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="css/mui.css"/>
+    <style type="text/css">
+    	.wSpace{
+    		letter-spacing: 1em;
+    	}
+    	.mui-input-row label{
+    		border: 1px solid red;
+    		width: 25%;
+    		/*text-align: center;*/
+    		padding: 11px 6px;
+    	}
+    	.mui-input-row label ~ input{
+    		width: 75%;
+    		padding-left:10px;
+    		border-left: 10px solid red;
+    		/*margin-left:10px ;*/
+    	}
+    </style>
+</head>
+<body>
+    <!--mui文档结构：mdoctype-->
+    <form class="mui-input-group">
+        <div class="mui-input-row">
+            <label>用户名</label>
+            <input type="text" class="mui-input-clear" placeholder="input">
+        </div>
+        <div class="mui-input-row">
+            <label>手机号</label>
+            <input type="tel" class="mui-input-clear" placeholder="input">
+        </div>
+        <div class="mui-input-row">
+            <label class="wSpace">密码</label>
+            <input type="password" placeholder="input">
+        </div>
+    </form>
+</body>
+<script src="js/mui.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+mui.init()
+</script>
+</html>
+

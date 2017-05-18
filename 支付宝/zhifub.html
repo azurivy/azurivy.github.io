@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="css/mui.css"/>	</head>
+		<style type="text/css">
+			/*.mui-bar-nav{
+				height: 22%;
+			}*/
+			
+			
+			.fix-top{
+				padding: 10px;
+				color: white;
+				margin-bottom: -8px;
+			}
+			.fr{
+				float: right;
+			}
+			.mui-bar.mui-bar-nav .iconfont{
+				margin: 10px;
+				font-size: 18px;
+				color: white;
+			}
+			.mui-bar-nav{
+				background: #3a3a3a;
+				color: white;
+			}
+			#fix-bottom{
+				width: 100%;
+				position: fixed;
+				top: 44px;
+				left: 0;
+				z-index: 10;
+			}
+			#fix-bottom .mui-table-view.mui-grid-view.mui-grid-9 .iconfont{
+				color: white;
+			}
+			#fix-bottom .mui-table-view.mui-grid-view.mui-grid-9{
+				background: #3a3a3a;
+				margin: 0;
+				color: white;
+			}
+			#fix-bottom .mui-media-body{
+				
+				color: white;
+			}
+			#fix-bottom .mui-table-view.mui-grid-view.mui-grid-9{
+				border: none;
+				padding: 0;
+				margin: 0;
+			}
+			#fix-bottom .mui-table-view-cell.mui-media.mui-col-xs-3.mui-col-sm-3{
+				border: none;
+			}
+			#mui-content{
+				padding-top:140px;
+			}
+			.mui-icon.iconfont.blue{
+				color: #0da9e4;
+			}
+			.mui-icon.iconfont.red{
+				color: #f45748;
+			}
+			.mui-icon.iconfont.orange{
+				color: #e79033;
+			}
+			.mui-icon.iconfont.green{
+				color: #0ab588;
+			}
+			#mui-content .mui-media-body{
+				color: black;
+				font-size: 12px;
+			}
+			#mui-content .mui-table-view.mui-grid-view.mui-grid-9 .iconfont{
+				font-size: 26px;
+			}
+			.mui-tab-item{
+				position: relative;
+			}
+			.mui-tab-item .iconfont{
+				z-index: 1;
+			}
+			.mui-bar.mui-bar-tab .mui-badge.mui-badge-red{
+				/*height: 16px;
+				width: 16px;
+				border-radius: 8px;
+				text-align: center;*/
+				z-index: 2;
+				position: absolute;
+				top: 10%;
+				right: 24%;
+			}
+		</style>
+	<body>
+		<header class="mui-bar mui-bar-nav">
+		    <div class="fix-top">
+		    	<i class="iconfont">&#xe601;</i>账单
+		    	<div class="fr">
+		    		<i class="iconfont">&#xe612;</i>
+		    		<i class="iconfont">&#xe67a;</i>
+		    		<i class="iconfont">&#xe608;</i>
+		    	</div>
+		    </div>
+		</header>
+		    <div id="fix-bottom">
+		    	
+		    
+		    <ul class="mui-table-view mui-grid-view mui-grid-9">
+		    <li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+		        <a href="#">
+		            <span class="mui-icon iconfont icon-saoyisao"></span>
+		            <div class="mui-media-body">扫一扫</div>
+		        </a>
+		    </li>
+		    <li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+		        <a href="#">
+		            <span class="mui-icon iconfont icon-fukuanma"></span>
+		            <div class="mui-media-body">付款</div>
+		        </a>
+		    </li>
+		    <li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+		        <a href="#">
+		            <span class="mui-icon iconfont icon-qiaquan"></span>
+		            <div class="mui-media-body">卡券</div>
+		        </a>
+		    </li>
+		    <li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+		        <a href="#">
+		            <span class="mui-icon iconfont icon-yuan"></span>
+		            <div class="mui-media-body">咻一咻</div>
+		        </a>
+		    </li>
+		   
+		</ul>
+		</div>
+		<nav class="mui-bar mui-bar-tab">
+		    <a class="mui-tab-item mui-active">
+		        <span class="mui-icon iconfont icon-qianbaopengyou"></span>
+		        <span class="mui-tab-label">支付宝</span>
+		    </a>
+		    <a class="mui-tab-item">
+		        <span class="mui-icon iconfont icon-koubei"></span>
+		        <span class="mui-tab-label">口碑</span>
+		    </a>
+		    <a class="mui-tab-item">
+		        <span class="mui-icon iconfont icon-pengyou"></span>
+		        <span class="mui-tab-label">朋友<span class="mui-badge mui-badge-red">5</span></span>
+		    </a>
+		    <a class="mui-tab-item">
+		        <span class="mui-icon iconfont icon-wo"></span>
+		        <span class="mui-tab-label">我的</span>
+		    </a>
+		</nav>
+		<div id="mui-content" class="mui-content">
+		    <ul class="mui-table-view mui-grid-view mui-grid-9">
+		    <li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+		        <a href="#">
+		            <span class="mui-icon iconfont icon-shoujichongzhi blue"></span>
+		            <div class="mui-media-body">手机充值</div>
+		        </a>
+		    </li>
+		    <li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+		        <a href="#">
+		            <span class="mui-icon iconfont icon-hongbao1 red"></span>
+		            <div class="mui-media-body">红包</div>
+		        </a>
+		    </li>
+		    <li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+		        <a href="#">
+		            <span class="mui-icon iconfont icon-shuidianmei blue"></span>
+		            <div class="mui-media-body">生活缴费</div>
+		        </a>
+		    </li>
+		    <li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+		        <a href="#">
+		            <span class="mui-icon iconfont icon-zhuanzhang blue"></span>
+		            <div class="mui-media-body">转账</div>
+		        </a>
+		    </li>
+		    <li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+		        <a href="#">
+		            <span class="mui-icon iconfont icon-shejiao red"></span>
+		            <div class="mui-media-body">余额宝</div>
+		        </a>
+		    </li>
+		    <li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+		        <a href="#">
+		            <span class="mui-icon iconfont icon-transfer orange"></span>
+		            <div class="mui-media-body">滴滴出行</div>
+		        </a>
+		    </li>
+		     <li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+		        <a href="#">
+		            <span class="mui-icon iconfont icon-taobaodianying red"></span>
+		            <div class="mui-media-body">淘宝电影</div>
+		        </a>
+		    </li>
+		    <li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+		        <a href="#">
+		            <span class="mui-icon iconfont icon-fuwuchuangb green"></span>
+		            <div class="mui-media-body">服务窗</div>
+		        </a>
+		    </li>
+		     <li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+		        <a href="#">
+		            <span class="mui-icon iconfont icon-mayijubao blue"></span>
+		            <div class="mui-media-body">蚂蚁聚宝</div>
+		        </a>
+		    </li>
+		    <li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+		        <a href="#">
+		            <span class="mui-icon iconfont icon-jipiao blue"></span>
+		            <div class="mui-media-body">机票火车票</div>
+		        </a>
+		    </li>
+		     <li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+		        <a href="#">
+		            <span class="mui-icon iconfont icon-qua-copy blue"></span>
+		            <div class="mui-media-body">阿里旅行</div>
+		        </a>
+		    </li>
+		    <li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+		        <a href="#">
+		            <span class="mui-icon iconfont icon-xinyongqiahuankuan orange"></span>
+		            <div class="mui-media-body">信用卡还账</div>
+		        </a>
+		    </li>
+		</ul>
+		<div id="slider" class="mui-slider" >
+		  <div class="mui-slider-group mui-slider-loop">
+		    <!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+		    <div class="mui-slider-item mui-slider-item-duplicate">
+		      <a href="#">
+		        <img src="img/QQ图片20170511144648.png">
+		      </a>
+		    </div>
+		    <!-- 第一张 -->
+		    <div class="mui-slider-item">
+		      <a href="#">
+		        <img src="img/20170510125053.jpg">
+		      </a>
+		    </div>
+		    <!-- 第二张 -->
+		    <div class="mui-slider-item">
+		      <a href="#">
+		        <img src="img/QQ图片20170510125158.jpg">
+		      </a>
+		    </div>
+		    <!-- 第三张 -->
+		    <div class="mui-slider-item">
+		      <a href="#">
+		        <img src="img/QQ图片20170511144632.png">
+		      </a>
+		    </div>
+		    <!-- 第四张 -->
+		    <div class="mui-slider-item">
+		      <a href="#">
+		        <img src="img/QQ图片20170511144648.png">
+		      </a>
+		    </div>
+		    <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+		    <div class="mui-slider-item mui-slider-item-duplicate">
+		      <a href="#">
+		        <img src="img">
+		      </a>
+		    </div>
+		  </div>
+		  <div class="mui-slider-indicator">
+		    <div class="mui-indicator mui-active"></div>
+		    <div class="mui-indicator"></div>
+		    <div class="mui-indicator"></div>
+		    <div class="mui-indicator"></div>
+		  </div>
+		</div>
+		<ul class="mui-table-view mui-grid-view mui-grid-9">
+		<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+		    <a href="#">
+		        <span class="mui-icon iconfont icon-qiangdan blue"></span>
+		        <div class="mui-media-body">红包快手</div>
+		    </a>
+		</li>
+		<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+		    <a href="#">
+		        <span class="mui-icon iconfont icon-tianmaobao red"></span>
+		        <div class="mui-media-body">天猫</div>
+		    </a>
+		</li>
+		<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+		    <a href="#">
+		        <span class="mui-icon iconfont icon-jiaoyujiaofei red"></span>
+		        <div class="mui-media-body">教育经费</div>
+		    </a>
+		</li>
+		<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+		    <a href="#">
+		        <span class="mui-icon iconfont icon-zhangben blue"></span>
+		        <div class="mui-media-body">记账本</div>
+		    </a>
+		</li>
+		
+		    </ul>
+		
+		    
+		</div>
+		
+		    
+		    
+	</body>
+	<script src="js/mui.min.js" type="text/javascript">
+		
+	</script>
+</html>

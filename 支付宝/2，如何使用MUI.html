@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/mui.css"/>
+	</head>
+	<body>
+		<!--1,顶部标题栏：mhead-->
+		<header class="mui-bar mui-bar-nav">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">标题</h1>
+		</header>
+		<!--2，轮播图：mslide-->
+		<div id="slider" class="mui-slider" >
+		  <div class="mui-slider-group mui-slider-loop">
+		    <!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+		    <div class="mui-slider-item mui-slider-item-duplicate">
+		      <a href="#">
+		        <img src="http://placehold.it/400x300">
+		      </a>
+		    </div>
+		    <!-- 第一张 -->
+		    <div class="mui-slider-item">
+		      <a href="#">
+		        <img src="http://placehold.it/400x300">
+		      </a>
+		    </div>
+		    <!-- 第二张 -->
+		    <div class="mui-slider-item">
+		      <a href="#">
+		        <img src="http://placehold.it/400x300">
+		      </a>
+		    </div>
+		    <!-- 第三张 -->
+		    <div class="mui-slider-item">
+		      <a href="#">
+		        <img src="http://placehold.it/400x300">
+		      </a>
+		    </div>
+		    <!-- 第四张 -->
+		    <div class="mui-slider-item">
+		      <a href="#">
+		        <img src="http://placehold.it/400x300">
+		      </a>
+		    </div>
+		    <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+		    <div class="mui-slider-item mui-slider-item-duplicate">
+		      <a href="#">
+		        <img src="http://placehold.it/400x300">
+		      </a>
+		    </div>
+		  </div>
+		  <div class="mui-slider-indicator">
+		    <div class="mui-indicator mui-active"></div>
+		    <div class="mui-indicator"></div>
+		    <div class="mui-indicator"></div>
+		    <div class="mui-indicator"></div>
+		  </div>
+		</div>
+		<!--<header class="mui-bar mui-bar-nav">
+		    <h1 class="mui-title">标题</h1>
+		</header>-->
+		<!--3,按钮：mbutton-->
+		<button type="button" class="mui-btn mui-btn-green">按钮</button>
+		<button type="button" class="mui-btn mui-btn-red mui-btn-block">按钮</button>
+		<button type="button" class="mui-btn mui-btn-blue mui-btn-outlined">按钮</button>
+		<!--4，小气泡，数字角标-->
+		<span class="mui-badge mui-btn-red">优惠券</span>
+		<span class="mui-badge mui-badge-inverted mui-btn-blue">优惠券</span>
+		<!--5，小图标
+			配合iconfont
+		-->
+		<span class="mui-icon mui-icon-phone"></span>
+	</body>
+	<script type="text/javascript" src="js/mui.min.js" ></script>
+</html>
