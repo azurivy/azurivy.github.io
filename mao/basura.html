@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title></title>
+		<style type="text/css">
+			.wrap{
+				margin:30px auto;
+				text-align: center;
+				/*background: lightcyan;*/
+			}
+			.header,.nav,.footer{
+				height: 100px;
+				background: lightgrey;
+				margin-top: 10px;
+				line-height: 60px;
+				
+			}
+			.footer{
+				clear: both;
+			}
+			/*.content{
+				overflow: hidden;
+				height: 300px;
+				margin-top: 10px;
+			}*/
+			.subject,.aside{
+				height: 300px;
+				margin: 10px auto;
+				box-sizing: border-box;
+				padding-top: 20px;
+				line-height: 30px;
+			}
+			.aside{
+				background: lightpink;
+				width: 34%;
+				float: right;
+			}
+			.subject{
+				background: lightgreen;
+				width: 64%;
+				float: left;
+			}
+			@media(min-width:414px){
+				.wrap{
+					width: 100%;
+					margin: 10px;
+					background: white;
+				}
+			}
+			@media(max-width:414px){
+				.subject{
+					width: 100%;
+				}
+				.aside{
+					width: 100%;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrap">
+			<div class="header">页眉</div>
+			<div class="nav">导航</div>
+			<div class="content">
+				<div class="subject">
+					主体
+				</div>
+				<div class="aside">
+					边栏
+				</div>
+			</div>
+			<div class="footer">页脚</div>
+		</div>
+	</body>
+</html>

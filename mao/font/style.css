@@ -1,0 +1,50 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?c5yezv');
+  src:  url('fonts/icomoon.eot?c5yezv#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?c5yezv') format('truetype'),
+    url('fonts/icomoon.woff?c5yezv') format('woff'),
+    url('fonts/icomoon.svg?c5yezv#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-x:before {
+  content: "\78";
+}
+.icon-icecream-:before {
+  content: "\e6fb";
+}
+.icon-icecream-1:before {
+  content: "\e704";
+}
+.icon-icecream-2:before {
+  content: "\e708";
+}
+.icon-x2:before {
+  content: "\79";
+}
+.icon-icecream-3:before {
+  content: "\e6fc";
+}
+.icon-icecream-12:before {
+  content: "\e6fd";
+}
+.icon-icecream-22:before {
+  content: "\e6fe";
+}

@@ -1,0 +1,17 @@
+.list{
+	list-style: none;
+}
+.list li{
+	height: 90px;
+	line-height: 90px;
+}
+.list .fr{
+	float: right;
+}
+.list em{
+	font-style: normal;
+	background: red;
+	color: white;
+	padding: 2px;
+	border-radius: 4px;
+}

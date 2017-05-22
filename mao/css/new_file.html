@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			@keyframes move {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-15px);
+  }
+}
+#logo {
+  width: 300px;
+  height: 300px;
+  border: 1px solid #000;
+}
+#logoImg {
+  width: 198px;
+  height: 80px;
+  margin: 120px auto;
+}
+#logoImg span {
+  width: 30px;
+  height: 80px;
+  float: left;
+  margin: 0 1px 0 2px;
+}
+#logoImg span:nth-of-type(1) {
+  background: #C06;
+  animation: .5s move alternate infinite;
+}
+#logoImg span:nth-of-type(2) {
+  background: #3CF;
+  animation: .5s .1s move alternate infinite;
+}
+#logoImg span:nth-of-type(3) {
+  background: #C6C;
+  animation: .5s .2s move alternate infinite;
+}
+#logoImg span:nth-of-type(4) {
+  background: #369;
+  animation: .5s .3s move alternate infinite;
+}
+#logoImg span:nth-of-type(5) {
+  background: #6F9;
+  animation: .5s .4s move alternate infinite;
+}
+#logoImg span:nth-of-type(6) {
+  background: #CF6;
+  animation: .5s .5s move alternate infinite;
+}
+#logo #logoImg span {
+  animation-play-state: paused;
+}
+#logo:hover #logoImg span {
+  animation-play-state: running;
+}
+		</style>
+	</head>
+	<body>
+		<div id="logo">
+    <div id="logoImg">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+	</body>
+</html>
