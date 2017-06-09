@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<style type="text/css">
+			#cont{
+				height: 350px;
+				width: 500px;
+				position: relative;
+			}
+			img{
+				height: 100%;
+				width: 100%;
+				position: absolute;
+				top: 0;
+			}
+			#fix{
+				height: 100px;
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				background: rgba(0,0,0,0.4);
+				width: 100%;
+				color: white;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="cont">
+			<img src="img/cake/c1.jpg"/>
+			<img src="img/cake/c2.jpg"/>
+			<img src="img/cake/c3.jpg"/>
+			<div id="fix">
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/MyQuery.js" ></script>
+	<script type="text/javascript">
+		var arrImg=['img/cake/c1.jpg','img/cake/c2.jpg','img/cake/c3.jpg'];
+		var aImg=$('cont').getElementsByTagName('img');
+		var num=0;
+		var timer=null;
+			for(var i=0;i<aImg.length;i++){
+				aImg[i].style.left=i*500+'px';
+			}
+			setInterval(function(){
+				for(var i=0;i<aImg.length;i++){
+					Go(aImg[i],'left',-20,-1000);
+					var Lef=parseInt(getStyle(aImg[0],'left'));
+					if(Lef==-1000){
+						aImg[i].style.left=(i+1)*500+'px';
+					}
+				}
+			},1000)
+	</script>
+</html>
