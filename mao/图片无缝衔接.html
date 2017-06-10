@@ -9,6 +9,8 @@
 				height: 350px;
 				width: 500px;
 				position: relative;
+				margin-left:200px ;
+				overflow: hidden;
 			}
 			img{
 				height: 100%;
@@ -19,7 +21,7 @@
 			#fix{
 				height: 100px;
 				position: absolute;
-				bottom: 0;
+				bottom: -100px;
 				left: 0;
 				background: rgba(0,0,0,0.4);
 				width: 100%;
@@ -40,19 +42,58 @@
 	<script type="text/javascript">
 		var arrImg=['img/cake/c1.jpg','img/cake/c2.jpg','img/cake/c3.jpg'];
 		var aImg=$('cont').getElementsByTagName('img');
-		var num=0;
-		var timer=null;
-			for(var i=0;i<aImg.length;i++){
-				aImg[i].style.left=i*500+'px';
-			}
-			setInterval(function(){
-				for(var i=0;i<aImg.length;i++){
-					Go(aImg[i],'left',-20,-1000);
-					var Lef=parseInt(getStyle(aImg[0],'left'));
-					if(Lef==-1000){
-						aImg[i].style.left=(i+1)*500+'px';
-					}
-				}
-			},1000)
+		var aText=['好累哦','好困哦','好饿哦']
+//		var num=0;
+//		var timer=null;
+		for(var i=0;i<aImg.length;i++){
+			aImg[i].style.left=i*500+'px';
+		}
+		document.onclick=function(){
+			reImg();
+		}
+		function reImg(){
+//			alert(0);
+			$('fix').innerHTML=aText[0];
+			Go($('fix'),'bottom',10,0,function(){ //说明框0
+				setTimeout(function(){
+					Go($('fix'),'bottom',-10,-100,function(){
+						Go(aImg[2],'left',-10,500)
+						Go(aImg[1],'left',-10,0)
+						Go(aImg[0],'left',-10,-500,function(){
+			//				alert(1);
+							aImg[0].style.left=1000+'px';
+							$('fix').innerHTML=aText[1];
+							Go($('fix'),'bottom',10,0,function(){ //说明框1
+								
+								setTimeout(function(){
+									Go($('fix'),'bottom',-10,-100,function(){
+										Go(aImg[2],'left',-10,0);
+										Go(aImg[1],'left',-10,-500,function(){
+											aImg[1].style.left=1000+'px';
+										});
+										Go(aImg[0],'left',-10,500,function(){//说明框2
+				//							alert(2);
+											$('fix').innerHTML=aText[2];
+											Go($('fix'),'bottom',10,0,function(){
+												setTimeout(function(){
+													Go($('fix'),'bottom',-10,-100,function(){
+														Go(aImg[2],'left',-10,-500,function(){
+															aImg[2].style.left=1000+'px';
+														})
+														Go(aImg[1],'left',-10,500);
+														Go(aImg[0],'left',-10,0,reImg);//调用自身。。轮回
+													})
+												},2000)
+											})
+										});
+									});
+								},2000)	
+							});
+						});
+					})
+				},2000)
+			})
+		}
+
 	</script>
 </html>
