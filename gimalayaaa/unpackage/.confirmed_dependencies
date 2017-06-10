@@ -1,0 +1,51 @@
+{
+	"index.html": {
+		"resources": [
+			"js/mui.min.js",
+			"css/mui.min.css"
+		]
+	},
+	"muhtml.html": {
+		"resources": [
+			"img/square/wKgDtlSKzsOQ_Ae-AAJtJtlyx5U529_web_x_large.jpg",
+			"img/square/wKgDa1b4kNLCyUuRAAAhNdzxvLQ020_web_x_large.jpg",
+			"img/wKgJWFju43_A5ODwABKCY6eKp3Y199.jpg",
+			"css/gimalayaaaaa.css",
+			"fonts/iconfont.woff",
+			"img/square/wKgJLViK26zQ5pN3AAFIQwDhwIs350_web_large.jpg",
+			"img/square/wKgDtlS4cZeCzmE2AAHjHCQ8i2g083_web_large.jpg",
+			"img/square/65395ed0jw1e8qgp5bmzyj2050050aa8.jpg",
+			"js/mui.min.js",
+			"img/square/wKgJKld_huaCvnucAAKz_KDvgVk710_web_x_large.jpg",
+			"img/square/wKgDbFY8HO3R9lV0AAPk5Bf2lb4145_web_large.jpg",
+			"img/square/wKgDYlV-MnjzrNRKAAIAAA4Fpi8775_web_x_large.jpg",
+			"img/wKgJRlkP0OTRB6m0ABHugst5h34766.jpg",
+			"css/iconfont.css",
+			"img/wKgJWFjYtOKToDz9ABVrGAfw92o369.jpg",
+			"img/wKgJRlkAbeWznfdyAA5e0f386Qg111.png",
+			"img/square/wKgDs1PeOaLRV-XVAAcOTv16ohg714_web_large.jpg",
+			"img/square/wKgJL1imkz2Snd_LAADlvcknBqo552_web_large.jpg",
+			"img/square/wKgJNlhy9ObSUfAxAAGDB4FwRKI188_web_large.jpg",
+			"img/wKgDZFdbt0Px5rkHAAFLb61lvTM147_web_large.jpg",
+			"img/square/wKgDtlRtoLrACdm7AAOOdpWdKzQ622_mobile_large.jpg",
+			"img/square/wKgJXFkn_PmT4og6AADEttKRXHI902_web_x_large.jpg",
+			"img/square/wKgJKVeIt-uCS-siAAG7tK6zG6Q607_mobile_large.jpg",
+			"fonts/mui.ttf",
+			"img/square/wKgJJli30t6Cn9f9AAG8ZWtDVgs660_mobile_large.jpg",
+			"img/square/wKgJL1gYYjzxW7fQAAWaMAvliP8961_web_large.jpg",
+			"img/square/wKgDY1bFaify4osAAADtk9VhGbs279_web_large.jpg",
+			"img/square/wKgDWlZlHrTyXdvGAAHvieHWZGY605_web_x_large.jpg",
+			"img/square/wKgJJFeGKheDTwPOAAL0xQtskD8563_web_large.jpg",
+			"img/square/wKgDXFaOQMiSbZvsAAEABdCdw8w828_web_large.jpg",
+			"img/square/wKgJRlkSgvmCJGWGAAE4BEqrIgs340_web_x_large.jpg",
+			"img/wKgJR1kP0FXDsC1WABHPXsUdg1g622.jpg",
+			"css/mui.min.css",
+			"img/square/wKgDYldeh4GDEsZUAADAjTJ1hQA920_web_large.jpg",
+			"img/square/wKgDbFbvQjCBOtIAAADufMXBLbg945_web_large.gif",
+			"img/square/wKgJM1ihjleixawcAAD80Dl9h8M773_web_x_large.jpg",
+			"img/wKgJR1ju4kmTxwAwABKqFbQdhh0400.jpg",
+			"img/square/wKgJWVkeVDjw9b2tAADzMHhn5bM214_mobile_large.jpg",
+			"img/square/wKgJXVkmRUKg9Df2AADhQzh1crE303_mobile_large.jpg"
+		]
+	}
+}

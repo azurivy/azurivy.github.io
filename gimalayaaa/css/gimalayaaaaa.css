@@ -1,0 +1,172 @@
+input[type=text]{
+	width: 56%;
+	/*border-radius: 10%;*/
+	display: inline-block;
+	margin: 10px 14px 0;
+	height: 30px;
+	font-size: 12px;
+}
+.font12{
+	font-size: 12px;
+}
+.font14{
+	font-size: 14px;
+}
+.mui-bar.mui-bar-tab .mui-icon .iconfont{
+	font-size: 20px;
+}
+/*#item1{
+	overflow: hidden;
+}
+#item1 .fixed-top{
+	position: fixed;
+	top: 0;
+	left: 0;
+}*/
+#item1 .search .iconfont{
+	font-size: 24px;
+	margin: 4px 6px;
+	vertical-align: middle;
+}
+.mui-table-view-cell:after{
+	height: 0;
+}
+
+#subitem1 .mui-table-view .mui-pull-right{
+	margin-right: 26px;
+	
+}
+
+.mui-table-view{
+	margin-bottom: 10px;
+	overflow: hidden;
+}
+.red{
+	color: red;
+	float: left;
+	margin-right: 6px;
+}
+#subitem1 .mui-table-view-cell h4{
+	font-size: 14px;
+	color: #333;
+} 
+#subitem1 .mui-table-view-cell p{
+	font-size: 12px;
+}
+#subitem1 .mui-table-view-cell p.font14{
+	font-size: 14px;
+}
+.mui-table-view:before{
+	height: 0;
+}
+
+.mui-table-view-cell.mui-text-center{
+	padding: 0 0 10px 0;
+}
+#subitem2 .mui-table-view .mui-table-view-cell{
+	width: 50%;
+	float: left;
+	border-right:1px solid #DDDDDD ;
+	border-bottom:1px solid #DDDDDD ;
+	padding: 8px 15px;
+}
+#subitem2 .mui-table-view{
+	overflow: hidden;
+	margin-bottom: 10px;
+	margin-right: -1px;
+}
+#subitem2 .mui-table-view .mui-table-view-cell .iconfont{
+	font-size: 24px;
+	color: orange;
+	margin-right:20px ;
+}
+#subitem2 .mui-table-view .mui-table-view-cell .g3{
+	color: #333;
+}
+#subitem3 .mui-table-view.mui-grid-view{
+	margin-top: 0;
+}
+#subitem3 .mui-table-view.mui-grid-view .iconfont{
+	margin-right: 3px;
+	font-size: 12px;
+}
+#subitem3 .mui-table-view.mui-grid-view .grey{
+		color: gray;
+}
+#subitem3 .mui-table-view.mui-grid-view .mui-media-body{
+	position: relative;
+	overflow: visible;
+	font-size: 12px;
+}
+.portrait{
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	position: absolute;
+	top: -30px;
+	left: 10px;
+}
+.portrait img{
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+}
+#subitem3 .mui-pull-left.red{
+	text-align: left;
+	margin-left: 56px;
+	width: 60px;
+}
+#subitem3 .mui-table-view.mui-grid-view .clear{
+	text-align: left;
+	margin-top: 4px;
+}
+#subitem3 .mui-table-view.mui-grid-view .mui-table-view-cell{
+	position: relative;
+}
+#subitem3 .mui-table-view.mui-grid-view .mui-table-view-cell .fixed{
+	position: absolute;
+	top: 11px;
+	right: 0;
+	color: white;
+	display: block;
+	font-size: 12px;
+	padding: 0;
+	margin: 3px;
+}
+#subitem3 .mui-table-view.mui-grid-view .mui-table-view-cell .bg-half-opa{
+	display: inline-block;
+	background: rgba(0,0,0,0.4);
+	padding: 0 4px;
+	border-top-right-radius: 2px;
+	border-bottom-right-radius: 2px;
+}
+#subitem3 .mui-table-view.mui-grid-view .mui-table-view-cell .bg-red{
+	display: inline-block;
+	background: hotpink;
+	padding: 0 4px;
+	border-top-left-radius: 2px;
+	border-bottom-left-radius: 2px;
+}
+#subitem4 .mui-table-view .mui-media-object{
+	line-height: 66px;
+	max-width: 66px;
+	height: 66px;
+}
+#subitem5 .mui-pull-right{
+	margin-right: 24px;
+	font-weight: normal;
+}
+#subitem5 .mui-table-view-cell{
+	font-weight: bold;
+	vertical-align: top;
+}
+#subitem5 .mui-table-view-cell .box-shadow{
+	box-shadow: 1px 1px 10px 1px darkgray;
+}
+#subitem5 .mui-grid-view li .grey.font12.mui-ellipsis-2{
+	margin-top: 4px;
+}
+#subitem5 .mui-grid-view li .mui-media-body.mui-ellipsis{
+	color: peachpuff;
+	
+}
