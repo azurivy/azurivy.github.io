@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<div id="">
+			<label>距离</label>
+			<input type="" name="" id="pandora"  value="Jun 12,2017 21:00:00" />
+		</div>
+		<div>
+			<label>还剩</label>
+			<input type="" name=""  id="input" value="" />
+			<button id="btn">倒计时开始</button>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/MyQuery.js" ></script>
+	<script type="text/javascript">
+		$('btn').onclick=function(){
+			setInterval(function(){
+				var str='';
+				var futureDate=new Date($('pandora').value);
+				var nowDate=new Date();
+				var t=(futureDate-nowDate)/1000;
+				str=Math.floor(t/86400)+'天'
+				   +Math.floor(t%86400/3600)+'时'
+				   +Math.floor(t%86400%3600/60)+'分'
+				   +Math.floor(t%60)+'秒';
+				$('input').value=str;
+//				alert(str);  
+			},1000)
+		}
+		//注意声明放置的位置
+	</script>
+</html>
