@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<style type="text/css">
+			.cont{
+				height: 300px;
+				width: 750px;
+				border: 10px solid gainsboro;
+				overflow: hidden;
+			}
+			#left{
+				float: left;
+				height: 300px;
+				width: 298px;
+				background: lightskyblue;
+                color: white;
+			}
+			#right{
+				float: right;
+				height: 300px;
+				width: 298px;
+				background: darkgray;
+				vertical-align: top;
+				margin-top: 0;
+				color: white;
+			}
+			#middle{
+				width: 150px;
+				float: left;
+				overflow: hidden;
+				padding: 50px 20px 0;
+				box-sizing: border-box;
+			}
+			button{
+				background: gainsboro;
+				padding: 10px 20px;
+				border-radius: 6px;
+				color: #333;
+				margin-bottom: 20px;
+				margin-left: 20px;
+				
+			}
+			span{
+				display: inline-block;
+				width: 16px;
+				height: 60px;
+				/*background: gold;*/
+				margin-left: 8px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="cont">
+			<div id="left">披绣闼， 俯雕甍， 山原旷其盈视， 川泽纡其骇瞩。 闾阎扑地， 钟鸣鼎食之家； 舸舰迷津， 青雀黄龙之舳。 云销雨霁， 彩彻区明。 落霞与孤鹜齐飞， 秋水共长天一色。 渔舟唱晚， 响穷彭蠡之滨； 雁阵惊寒， 声断衡阳之浦</div>
+			<div id="middle">
+				<button id="btn">走吧</button>
+				<div id="changenum">
+					<span id="statistics">
+						
+					</span>
+					<span id="total">
+						
+					</span>
+				</div>
+				<div id="changecolor">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+			<div id="right">
+				
+			</div>
+		</div>
+		<script type="text/javascript" src="js/MyQuery.js" ></script>
+		<script type="text/javascript">
+			$('btn').onclick=function(){
+				var i=0;
+				var num=0;
+					var str=$('left').innerHTML;
+					var arr=str.split('');
+					$('total').innerHTML='/'+str.length;
+				
+				var time =setInterval(function(){
+					var str1=$('left').innerHTML
+					if(i>str.length){
+						clearInterval(time);
+						opacity($('changecolor'),-0.05);
+						opacity($('changenum'),-0.05);
+						return;
+					}
+					var aSpan=$('changecolor').getElementsByTagName('span');
+					for(var a=0;a<aSpan.length;a++){
+						aSpan[a].style.background='gold';
+					}
+					aSpan[num].style.background='red';
+					num++;
+					if(num>=aSpan.length){
+						num=0;
+					}
+					$('left').innerHTML=str.substring(i);
+					var b=str.length;
+					
+					$('right').innerHTML=str.substring(0,i);
+					$('statistics').innerHTML=str1.length;
+					i++;
+				},100)
+			}
+		</script>
+	</body>
+</html>

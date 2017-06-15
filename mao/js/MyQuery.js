@@ -39,3 +39,22 @@ function opacity(obj,state){
 		obj.style.opacity=opa;
 	},50)
 }
+function shake(obj,attr,endfn){
+	var posL=parseInt(getStyle(obj,attr));
+	var arr=[];
+	for(var i=20;i>=0;i-=2){
+		arr.push(i,-i);
+	}
+	var num=0;
+	clearInterval(obj.shaker);
+	obj.shaker=setInterval(function(){
+		obj.style[attr]=posL+arr[num]+'px';
+		num++;
+		if(num>=arr.length){
+			clearInterval(obj.shaker);
+			if(endfn){
+				endfn();
+			}
+		}
+	},50)
+}
